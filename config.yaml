@@ -1,0 +1,75 @@
+experiment:
+  name: "Arken Simulation"
+  rounds: 20
+  seed: 42
+  condition: "A"
+
+lm_studio:
+  base_url: "http://localhost:1234/v1"
+  api_key: "not-needed"
+  model: "qwen/qwen3-next-80b"
+  temperature_base: 0.7
+
+backend: "openai_compatible"
+
+# Verbosity controls how long agents speak.
+# Affects both max_tokens sent to the API and word limits injected into prompts.
+# short | moderate | long
+verbosity:
+  humans: "moderate"    # discussion contributions and leader synthesis
+  arken: "moderate"     # reasoning field inside JSON response
+  observer: "moderate"  # observer verdict and analysis
+
+agents:
+  arken_count: 9
+  human_count: 9
+  supervisor: true
+  memory_max_events: 10
+
+backstory_mode: "template"
+interaction_mode: "representative"
+incident_mode: "scripted"          # scripted | generative
+
+world:
+  initial_resources: 100
+  base_food_per_human: 10.0
+  resource_decay_per_round: 3
+  scarcity_threshold: 40
+  scarcity_round: 10
+
+conditions:
+  A:
+    rules_written: false
+    enforcement: false
+    dissenter: false
+    scarcity: false
+  B:
+    rules_written: true
+    enforcement: false
+    dissenter: false
+    scarcity: false
+  C:
+    rules_written: true
+    enforcement: true
+    dissenter: false
+    scarcity: false
+  D:
+    rules_written: true
+    enforcement: false
+    dissenter: true
+    dissenter_round: 5
+    scarcity: false
+  E:
+    rules_written: true
+    enforcement: false
+    dissenter: false
+    scarcity: true
+
+metrics:
+  observer_every_n_rounds: 2
+  identity_probe_every_n_rounds: 5
+
+logging:
+  level: "INFO"
+  output_dir: "logs"
+  save_conversations: true

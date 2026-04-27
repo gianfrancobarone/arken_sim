@@ -1,0 +1,47 @@
+{
+  "_comment": "Name and occupation pools. Add names freely — the system draws without replacement to avoid duplicates within a group. Occupations are mapped per archetype category.",
+
+  "first_names": [
+    "Aaron", "Amara", "Ana", "Andrei", "Baraka", "Boris", "Caleb", "Carmen",
+    "Chen", "Clara", "Dario", "David", "Elena", "Elif", "Emil", "Fatima",
+    "Felix", "Hana", "Hassan", "Ingrid", "Ivan", "James", "Jana", "Jin",
+    "Jonas", "Kenji", "Lars", "Layla", "Leo", "Lena", "Luca", "Lucy",
+    "Malik", "Mara", "Marcus", "Maria", "Maya", "Miguel", "Miko", "Nadia",
+    "Nour", "Omar", "Pavel", "Petra", "Priya", "Rafael", "Rania", "Rosa",
+    "Said", "Sara", "Selin", "Sergei", "Sofia", "Stefan", "Tariq", "Tomas",
+    "Uma", "Valentina", "Viktor", "Yuki", "Zara", "Zoe", "John", "Ada",
+    "Bruno", "Cleo", "Diego", "Esther", "Finn", "Gloria", "Hugo", "Iris"
+  ],
+
+  "occupations": {
+    "Survivalist":          ["engineer", "soldier", "wilderness medic", "pilot", "mechanic", "security contractor"],
+    "Caretaker":            ["doctor", "nurse", "teacher", "counselor", "midwife", "social worker"],
+    "Rebel":                ["journalist", "lawyer", "union organizer", "programmer", "activist", "documentary filmmaker"],
+    "Collaborator":         ["administrator", "accountant", "logistics officer", "colonial clerk", "procurement specialist"],
+    "Advocate":             ["mediator", "diplomat", "public defender", "community organizer", "educator"],
+    "Follower":             ["technician", "cook", "maintenance worker", "data entry clerk", "assistant"],
+    "Paranoid":             ["intelligence analyst", "former security officer", "systems auditor", "cryptographer"],
+    "Narcissist":           ["former executive", "architect", "celebrity scientist", "decorated officer"],
+    "Martyr":               ["relief worker", "chaplain", "volunteer coordinator", "former aid worker"],
+    "Manipulator":          ["public relations officer", "negotiator", "political advisor", "talent agent"],
+    "Intellectual":         ["researcher", "historian", "philosopher", "sociologist", "theoretical physicist"],
+    "Populist":             ["labor organizer", "former politician", "radio host", "street preacher"],
+    "Enforcer":             ["former police officer", "military veteran", "prison guard", "colony security chief"],
+    "Mediator":             ["arbitrator", "family therapist", "cross-cultural liaison", "conflict resolution specialist"],
+    "The Exile":            ["former colonial administrator", "disgraced scientist", "former judge", "deposed official"],
+    "The True Believer":    ["ideological instructor", "religious leader", "political commissar", "cult educator"],
+    "The Broken One":       ["trauma surgeon", "war correspondent", "disaster relief worker", "former soldier"],
+    "The Newcomer":         ["transfer technician", "newly assigned officer", "recent graduate", "reassigned clerk"],
+    "The Opportunist":      ["trader", "broker", "former lobbyist", "supply chain manager"],
+    "The Double Agent":     ["interpreter", "liaison officer", "intelligence courier", "cultural advisor"],
+    "The Idealist Gone Wrong": ["former activist", "disillusioned reformer", "ex-revolutionary", "burned-out advocate"],
+    "The Ghost":            ["archivist", "data analyst", "night shift worker", "former librarian"],
+    "The Protector":        ["bodyguard", "former parent", "military escort", "personal aide"],
+    "The Resigned":         ["long-term colonial worker", "veteran technician", "retired educator", "former dreamer"]
+  },
+
+  "ages": {
+    "min": 24,
+    "max": 58
+  }
+}
